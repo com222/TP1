@@ -7,10 +7,10 @@ public class Borne extends Carte {
 		super();
 		this.km = km;
 	}
-	
+
 	public String toString() {
 		StringBuilder stringBuilder = new StringBuilder();
-		   return stringBuilder.append(km).append("KM").toString();
-		}
+		return stringBuilder.append(km).append("KM").toString();
+	}
 
 }
