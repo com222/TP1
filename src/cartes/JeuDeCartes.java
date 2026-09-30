@@ -70,7 +70,16 @@ public class JeuDeCartes {
 	}
 
 	public boolean checkCount() {
-		return donnerCartes().length == 106;
+		Carte[] listeCartes = donnerCartes();
+		boolean check = false; 
+		int j =0; 
+		for (Configuration cartes : typesDeCartes) {
+			for (int i = 0; i < cartes.getNbExemplaires(); i++) {
+				check = listeCartes[j].equals(cartes.getCarte());
+				j++;
+			}
+		}
+		return check; 
 	}
 
 }
