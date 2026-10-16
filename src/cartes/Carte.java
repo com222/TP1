@@ -4,10 +4,10 @@ public abstract class Carte {
 	
 	@Override
 	public boolean equals(Object obj) {
-	if(obj instanceof Carte carte) {
-	return toString().equals(carte.toString());
-	}
-	return false;
+		if (obj instanceof Carte carte) {
+			return toString().equals(carte.toString());
+		}
+		return false;
 	}
 
 }

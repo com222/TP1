@@ -8,6 +8,12 @@ public class Borne extends Carte {
 		this.km = km;
 	}
 
+	public int getKm() {
+		return km;
+	}
+
+
+
 	public String toString() {
 		StringBuilder stringBuilder = new StringBuilder();
 		return stringBuilder.append(km).append("KM").toString();
