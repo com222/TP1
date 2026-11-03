@@ -8,7 +8,7 @@ import cartes.Carte;
 
 public class MainJoueur {
 	 private final List<Carte> cartes = new ArrayList<>();
-	
+
 	public void prendre(Carte carte) {
 		cartes.add(carte);
 	}
@@ -24,5 +24,10 @@ public class MainJoueur {
 			stringBuilder.append("-").append(carte).append("\n");
 		}
 		return stringBuilder.toString();
+	}
+	
+	// TP4 
+	public List<Carte> donnerListeCartes(){
+		return cartes; 
 	}
 }
